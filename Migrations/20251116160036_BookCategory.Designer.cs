@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Mititean_Ionut_Daniel_Lab2.Data;
 
@@ -11,9 +12,11 @@ using Mititean_Ionut_Daniel_Lab2.Data;
 namespace Mititean_Ionut_Daniel_Lab2.Migrations
 {
     [DbContext(typeof(Mititean_Ionut_Daniel_Lab2Context))]
-    partial class Mititean_Ionut_Daniel_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20251116160036_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
